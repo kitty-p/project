@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<head>
+    <title>Blogs</title>
+</head>
+<body>
+    <header class="banner">
+        <a href="home.html"><img src="logo.jpg" alt="Blog logo"></a>
+    </header>
+    <nav class="menu">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+    </nav>
+    <section>
+        <h1 class="title">Blogs</h1>
+        <h2 class="newBlog">Post New Blog</h2>
+        <form id="blog">
+            <h3 class="sections">Title Heading: </h3>
+            <input type="text" id="blogTitle" name="title"><br>
+            <h3 class="sections">Author: </h3>
+            <input type="text" id="blogAuthor" name="author"><br>
+            <h3 class="sections">Post: </h3>
+            <textarea type="text" id="blogPost" name="post"></textarea><br>
+            <h3 class="sections">Rating: </h3>
+            <select id="rating" name="rating">
+                <option value="5">5 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="2">2 Stars</option>
+                <option value="1">1 Star</option>
+            </select>
+            <button type="button" onclick="printBlogs()" class="postBlog">Post</button>
+        </form>
+        
+        <div id="outputBlogs">
+            <button onclick="editBlogs(this)">Edit Blogs</button> 
+            <h2>TITLE HEADING</h2> <br>
+            <h2>By Kitty on 27.4.2020</h2> <br>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took 
+                a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including 
+                versions of Lorem Ipsum. 
+            </p>
+            <br>
+            <label for="rating">Travel Rating: </label>
+            <img src="star.jpg" alt="Travel Rating" class="rating"><img src="star.jpg" alt="Travel Rating" class="rating">
+            <br>
+            <br>
+            <h2>TITLE HEADING</h2> <br>
+            <h2>By Kitty on 27.4.2020</h2> <br>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took 
+                a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including 
+                versions of Lorem Ipsum.
+            </p>
+            <br>
+            <label for="rating">Travel Rating: </label>
+            <img src="star.jpg" alt="Travel Rating" class="rating"><img src="star.jpg" alt="Travel Rating" class="rating"><img src="star.jpg" alt="Travel Rating" class="rating">
+            <br>
+        </div>
+    </section>
+    <aside>
+        <button onclick="scrollToTop()" class="btn">Top</button>
+    </aside>
+    <script src="website.js"></script>
+</body>
+</html>
